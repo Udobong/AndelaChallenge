@@ -1,0 +1,54 @@
+2017-12-15T08:15:29.190+0100 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2017-12-15T08:15:29.191+0100 I CONTROL  [initandlisten] MongoDB starting : pid=4436 port=27017 dbpath=c:\UserManager-master\db 64-bit host=DESKTOP-DACHAT3
+2017-12-15T08:15:29.191+0100 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-12-15T08:15:29.191+0100 I CONTROL  [initandlisten] db version v3.6.0
+2017-12-15T08:15:29.191+0100 I CONTROL  [initandlisten] git version: a57d8e71e6998a2d0afde7edc11bd23e5661c915
+2017-12-15T08:15:29.192+0100 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-12-15T08:15:29.192+0100 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-12-15T08:15:29.200+0100 I CONTROL  [initandlisten] modules: none
+2017-12-15T08:15:29.200+0100 I CONTROL  [initandlisten] build environment:
+2017-12-15T08:15:29.200+0100 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-12-15T08:15:29.200+0100 I CONTROL  [initandlisten]     distarch: x86_64
+2017-12-15T08:15:29.200+0100 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-12-15T08:15:29.240+0100 I CONTROL  [initandlisten] options: { config: "C:\Program Files\MongoDB\Server\3.6\mongod.cfg", service: true, storage: { dbPath: "c:\UserManager-master\db" }, systemLog: { destination: "file", path: "c:\UserManager-master\log\mongod.log" } }
+2017-12-15T08:15:29.366+0100 W -        [initandlisten] Detected unclean shutdown - c:\UserManager-master\db\mongod.lock is not empty.
+2017-12-15T08:15:29.714+0100 I -        [initandlisten] Detected data files in c:\UserManager-master\db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-12-15T08:15:29.714+0100 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-12-15T08:15:29.716+0100 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1511M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2017-12-15T08:15:31.940+0100 I STORAGE  [initandlisten] WiredTiger message [1513322131:939856][4436:140716257784576], txn-recover: Main recovery loop: starting at 1/22912
+2017-12-15T08:15:31.941+0100 I STORAGE  [initandlisten] WiredTiger message [1513322131:940849][4436:140716257784576], txn-recover: Recovering log 1 through 2
+2017-12-15T08:15:32.146+0100 I STORAGE  [initandlisten] WiredTiger message [1513322132:146757][4436:140716257784576], txn-recover: Recovering log 2 through 2
+2017-12-15T08:15:34.504+0100 I CONTROL  [initandlisten] 
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] 
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] 
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] 
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+2017-12-15T08:15:34.505+0100 I CONTROL  [initandlisten] 
+2017-12-15T08:15:44.511+0100 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'c:/UserManager-master/db/diagnostic.data'
+2017-12-15T08:15:44.701+0100 I NETWORK  [initandlisten] waiting for connections on port 27017
+2017-12-15T08:15:44.702+0100 I STORAGE  [initandlisten] Service running
+2017-12-15T12:34:20.445+0100 I NETWORK  [listener] connection accepted from 127.0.0.1:4586 #1 (1 connection now open)
+2017-12-15T12:34:20.446+0100 I NETWORK  [conn1] received client metadata from 127.0.0.1:4586 conn: { driver: { name: "nodejs", version: "2.2.33" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.15063" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.17" }
+2017-12-15T12:40:39.793+0100 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 35, after backgroundFlushing: 35, after connections: 35, after dur: 35, after extra_info: 35, after globalLock: 35, after locks: 35, after logicalSessionRecordCache: 147, after network: 312, after opLatencies: 312, after opcounters: 312, after opcountersRepl: 312, after repl: 312, after security: 312, after storageEngine: 312, after tcmalloc: 312, after wiredTiger: 787, at end: 1240 }
+2017-12-15T12:40:45.159+0100 I COMMAND  [PeriodicTaskRunner] task: DBConnectionPool-cleaner took: 365ms
+2017-12-15T12:40:45.761+0100 I COMMAND  [thread2] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:134 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_msg 503ms
+2017-12-15T12:54:21.969+0100 I NETWORK  [conn1] end connection 127.0.0.1:4586 (0 connections now open)
+2017-12-15T13:55:47.578+0100 I NETWORK  [listener] connection accepted from 127.0.0.1:6280 #2 (1 connection now open)
+2017-12-15T13:55:47.611+0100 I NETWORK  [conn2] received client metadata from 127.0.0.1:6280 conn: { driver: { name: "nodejs", version: "2.2.33" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.15063" }, platform: "Node.js v8.9.1, LE, mongodb-core: 2.1.17" }
+2017-12-15T13:59:49.115+0100 I NETWORK  [conn2] end connection 127.0.0.1:6280 (0 connections now open)
+2017-12-15T16:56:14.737+0100 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_PRESHUTDOWN request from Windows Service Control Manager, will terminate after current cmd ends
+2017-12-15T16:56:14.755+0100 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2017-12-15T16:56:14.756+0100 F CONTROL  [thread2] Encountered an error in PeriodicRunnerASIO: The I/O operation has been aborted because of either a thread exit or an application request.
+2017-12-15T16:56:14.802+0100 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2017-12-15T16:56:14.872+0100 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2017-12-15T16:56:15.957+0100 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2017-12-15T16:56:15.957+0100 I CONTROL  [serviceShutdown] now exiting
